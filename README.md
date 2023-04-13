@@ -10,8 +10,7 @@ This study proposes using self-supervised algorithms trained on raw waveform dat
 
 ### Comparison of speech representations in brains and deep neural networks
 <p>
-    <img src="figure1.png" alt>
-    
+    <img src="figure1.png" alt><br>
     <em>Comparing speech representations in brain and deep neural networks</em>
 </p>
 
