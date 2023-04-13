@@ -15,5 +15,7 @@ This study proposes using self-supervised algorithms trained on raw waveform dat
 <img src="figure2.png">
 
 ## The functional hierarchy of self-supervised wav2vec 2.0 maps to the speech hierarchy of the brain
+<img src="figure3.png">
 
-##  The specialization of wav2vec 2.0’s representations follows and clarifies the acoustic,speech, and language regions in the brain. 
+##  The specialization of wav2vec 2.0’s representations follows and clarifies the acoustic,speech, and language regions in the brain
+<img src="figure4.png">
