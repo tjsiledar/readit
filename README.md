@@ -11,11 +11,14 @@ This study proposes using self-supervised algorithms trained on raw waveform dat
 ### Comparison of speech representations in brains and deep neural networks
 <p>
     <img src="figure1.png" alt>
+    
     <em>Comparing speech representations in brain and deep neural networks</em>
 </p>
 
 Part A: We recorded brain activity of 412 participants using functional Magnetic Resonance Imaging (fMRI) as they passively listened to audio books in their native language (English, French or Mandarin)
+
 Part B: We take the activations X of the self-supervised wav2vec 2.0 model trained on 600 hrs of unlabelled data and the brain activity Y. We then measure the similarity between X and Y using standard encoding model W and evaluated using cross-validated Pearson correlation R.
+
 Part C: 
 
 ### Self supervised wav2vec 2.0 generates brain-like speech representations
