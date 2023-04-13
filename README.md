@@ -21,7 +21,17 @@ This study proposes using self-supervised algorithms trained on raw waveform dat
 **Part C**: We observe that the true BOLD (blood oxygen level-dependent) response (black) and the predicted BOLD reponse (red) from our model are quite similar indicating that the representations learned by our model are closer to brain-like representations.
 
 ### Self supervised wav2vec 2.0 generates brain-like speech representations
-<img src="figure2.png">
+<p>
+    <img src="figure2.png" alt><br>
+    <em>Figure 2: Self-supervised learning for wav2vec 2.0 is enough to generate brain-like representations</em>
+</p>
+
+**Part A**: Brain score R is calculated for each participant and voxel independently. Here we show the average scores across subjects using color coding. 
+
+**Part B**: Shows the R scores for the same wav2vec 2.0 model, averaged across subjects and voxels in four brain areas typically involved in speech processing. The gray bar shows the brain score obtained with randomly initialized wav2vec 2.0 model, while the colored bars represent the scores obtained with the trained model. We observe that there is a significant difference between the random and the trained model indicating that the trained model is actually learning the brain-like representations.
+
+**Part C**: 
+
 
 ### The functional hierarchy of self-supervised wav2vec 2.0 maps to the speech hierarchy of the brain
 <img src="figure3.png">
