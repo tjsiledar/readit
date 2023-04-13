@@ -1,3 +1,5 @@
+theme: minima
+
 # Toward a realistic model of speech processing in the brain with self-supervised learning
 
 Recent research has found that deep neural networks can produce similar results to the brain in response to the same input. However, these algorithms have certain limitations, such as 
