@@ -1,6 +1,5 @@
 # Toward a realistic model of speech processing in the brain with self-supervised learning
 
-<div style="text-align: justify">
 Recent research has found that deep neural networks can produce similar results to the brain in response to the same input. However, these algorithms have certain limitations, such as 
 1. requiring a large amount of data 
 2. supervised labels
@@ -8,8 +7,6 @@ Recent research has found that deep neural networks can produce similar results 
 4. large memory
 
 This study proposes using self-supervised algorithms trained on raw waveform data as a solution for speech processing. The results show that this method can learn brain-like representations with only 600 hours of unlabelled speech, which is comparable to what infants are exposed to during language acquisition. The functional hierarchy of the algorithm aligns with the cortical hierarchy of speech processing, and different training regimes reveal functional specialization similar to the cortex. The study confirms that this specialization is similar to the behavior of additional participants. This research shows how self-supervised learning can explain the organization of speech processing in the brain, and can identify the laws of language acquisition that shape the human brain.
-
-</div>
 
 ### Comparison of speech representations in brains and deep neural networks
 <p>
