@@ -17,9 +17,9 @@ We test our hypothesis that the latest self-supervised architecture (wav2vec 2.0
     <em>Figure 1: Comparing speech representations in brain and deep neural networks</em>
 </p>
 
-**Part A**: We recorded brain activity of 412 participants using functional Magnetic Resonance Imaging (fMRI) as they passively listened to audio books in their native language (English, French or Mandarin)
+**Part A**: We recorded brain activity of 412 participants using functional Magnetic Resonance Imaging (fMRI) as they passively listened to audio books in their native language (English, French or Mandarin).
 
-**Part B**: We take the activations X of the self-supervised wav2vec 2.0 model trained on 600 hrs of unlabelled data and the brain activity Y. We then measure the similarity between X and Y using standard encoding model W and evaluated using cross-validated Pearson correlation R.
+**Part B**: We take the activations X of the self-supervised wav2vec 2.0 model trained on 600 hrs of unlabelled data and the brain activity Y. We then measure the similarity between X and Y using standard linear encoding model W and evaluated using cross-validated Pearson correlation R (also referred to as the brain score).
 
 **Part C**: We observe that the true BOLD (blood oxygen level-dependent) response (black) and the predicted BOLD reponse (red) from our model are quite similar indicating that the representations learned by our model are closer to brain-like representations.
 
@@ -34,14 +34,14 @@ We compare three different models. An untrained wav2vec 2.0 model, a model train
 
 **Part A**: Brain score R is calculated for each participant and voxel (a small volume of brain tissue) independently. Here we show the average scores across subjects using color coding. 
 
-**Part B**: Shows the R scores for the same wav2vec 2.0 model, averaged across subjects and voxels in four brain areas typically involved in speech processing. The gray bar shows the brain score obtained with randomly initialized wav2vec 2.0 model, while the colored bars represent the scores obtained with the trained model. We observe that there is a significant difference between the random and the trained model indicating that the trained model is actually learning the brain-like representations.
+**Part B**: Shows the R scores for the same wav2vec 2.0 model, averaged across subjects and voxels in four brain areas typically involved in speech processing. The gray bar shows the brain score obtained with randomly initialized wav2vec 2.0 model, while the colored bars represent the scores obtained with the trained model. We observe that there is a significant difference between the random and the trained model indicating that the trained model is actually learning brain-like representations.
 
 **Part C**: We compare unsupervised, supervised, and self supervised trained models on 600 hrs of effective speech using R scores. We observe that self supervised model better corresponds to generating brain-like representations.
 
 **Key Takeaway**: Brain activity in nearly all cortical areas can be predicted with significant accuracy based on the activations of the models. Self-supervision performs better than supervised.
 
 ### Is there a mapping between the functional hierarchy of the self-supervised models and the speech hierarchy of the brain?
-Next, we try mapping the functional hierarchy (model layers) of our self-supervised model with that of the speech hierarchy i.e speech related regions of brain such as A1, A2, STG, STS, and IFG.
+Next, we try mapping the functional hierarchy (model layers) of our self-supervised model with that of the speech hierarchy i.e speech related regions of brain such as A1 and A2 (Heschl gyrus), STG (superior temporal gyrus), STS (superior temporal sulcus), and IFG (inferior frontal gyrus).
 <p>
     <img src="figure3.png" alt><br>
     <em>Figure 3: The functional hierarchy of self-supervised wav2vec 2.0 maps to the speech hierarchy of the brain</em>
