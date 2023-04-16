@@ -8,7 +8,7 @@ Recent research has found that deep neural networks can produce similar results 
 
 To address these challenges in speech processing, we propose utilizing self-supervised algorithms that are trained on raw waveform data. Our research demonstrates that this approach can create brain-like representations with just 600 hours of unlabeled speech, a similar exposure rate to that of infants during language acquisition. The functional hierarchy of this algorithm aligns with the cortical hierarchy of speech processing, and various training methods reveal functional specialization that is comparable to the cortex. Our research confirms that this specialization is analogous to the behavior of additional participants.
 
-Furthermore, we showcase how self-supervised learning can explicate the organization of speech processing in the brain and identify the language acquisition laws that shape the human brain
+Furthermore, we showcase how self-supervised learning can explicate the organization of speech processing in the brain and identify the language acquisition laws that shape the human brain.
 
 ### Comparison of speech representations in brains and deep neural networks.
 We test our hypothesis that the latest self-supervised architecture (wav2vec 2.0 in our case) trained on raw sensory data can produce activations similar to brain activity.
@@ -26,7 +26,7 @@ We test our hypothesis that the latest self-supervised architecture (wav2vec 2.0
 **Key Takeaway**: We map the activations obtained from the trained wav2vec 2.0 model to the brain activity and measure the similarity using Pearson correlation R (higher is better). Representations learned by our model map to those obtained from brain.
 
 ### Can brain-like representations be generated using self supervised modeling?
-We compare three different models. An untrained wav2vec 2.0 model, a model train with a self-supervised objective, and a supervised model trained for phonetic prediction from the same 600h of speech.
+We compare three different models. An untrained wav2vec 2.0 model, a model train with a self-supervised objective, and a supervised model trained for phonetic prediction from the same 600 hrs of speech.
 <p>
     <img src="figure2.png" alt><br>
     <em>Figure 2: Self-supervised learning for wav2vec 2.0 is enough to generate brain-like representations</em>
