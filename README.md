@@ -45,5 +45,28 @@ This study proposes using self-supervised algorithms trained on raw waveform dat
 
 **Part C**: We measure the proportion of voxels predicted by the different layers of the model primarily in the four regions involved in speech processing- A1 and A2, STG, STS, and IFG. We observe that voxels belonging to the lower-level brain areas are best predicted by lower layers of the model whereas the higher-level brain areas are best predicted by higher layers of the model.
 
-###  The specialization of wav2vec 2.0’s representations follows and clarifies the acoustic,speech, and language regions in the brain
-<img src="figure4.png">
+###  The specialization of wav2vec 2.0’s representations follows and clarifies the acoustic,speech, and language regions in the brain.
+<p>
+    <img src="figure4.png" alt><br>
+    <em>Figure 4: The specialization of wav2vec 2.0’s representations follows and clarifies the acoustic,speech, and language regions in the brain</em>
+</p>
+
+**Part A**: We use ABX matching-to-sample task to evaluate humans' ability to perceive phonemes of their native and non-native languages.
+
+**Part B**: We evaluate four models- random, non-speech, English and French. The random model is the wav2vec 2.0 without any training whereas the other models are trained using self-supervision. These models are evaluated on the same evaluation set as that of human participants. English and French models are evaluated on the same (native) or different (non-native) whereas the random and non-speech are evaluated on both.
+
+**Part C**: Here we report the R scores of these different models ( averaged across voxels) in four regions of the brain.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
