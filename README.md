@@ -22,7 +22,7 @@ Furthermore, we showcase how self-supervised learning can explicate the organiza
 
 **Part C**: We observe that the true BOLD (blood oxygen level-dependent) response (black) and the predicted BOLD reponse (red) from our model are quite similar indicating that the representations learned by our model are closer to brain-like representations.
 
-**Key Takeaway**: 
+**Key Takeaway**: We map the activations obtained from the trained wav2vec 2.0 model to the brain activity and measure the similarity using Pearson correlation R (higher is better).
 
 ### Can brain-like representations be generated using self supervised modeling?
 <p>
@@ -66,4 +66,4 @@ Furthermore, we showcase how self-supervised learning can explicate the organiza
 
 **Part D**: Here we identify for each voxel in the brain which of the four models give a higher R score. This helps in identifying areas in brain that corresponds to acoustic, speech, and language.
 
-**Key Takeaway**:
+**Key Takeaway**: Humans are better at discriminating native sounds than non-native sounds as expected. Applying the same discriminating test, our models also show similar discrimination for native and non-native, even better than humans. Results confirm that 600h of self supervised learning suffices for wav2vec 2.0 to learn language representations. 
