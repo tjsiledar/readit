@@ -17,11 +17,11 @@ We test our hypothesis that the latest self-supervised architecture (wav2vec 2.0
     <em>Figure 1: Comparing speech representations in brain and deep neural networks</em>
 </p>
 
-**Part A**: We recorded brain activity of 412 participants using functional Magnetic Resonance Imaging (fMRI) as they passively listened to audio books in their native language (English, French or Mandarin).
+**Part A**: We recorded brain activity of 412 participants using functional Magnetic Resonance Imaging (fMRI) as they passively listened to audiobooks in their native language (English, French, or Mandarin).
 
-**Part B**: We take the activations X of the self-supervised wav2vec 2.0 model trained on 600 hrs of same unlabelled speech data and the brain activity Y. We then measure the similarity between X and Y, by first transforming X using standard linear encoding model W and then evaluated using cross-validated Pearson correlation R (also referred to as the brain score).
+**Part B**: We take the activations X of the self-supervised wav2vec 2.0 model trained on 600 hrs of the same unlabelled speech data and the brain activity Y. We then measure the similarity between X and Y, by first transforming X using standard linear encoding model W and then evaluated using cross-validated Pearson correlation R (also referred to as the brain score).
 
-**Part C**: We observe that the true BOLD (blood oxygen level-dependent) response (black) and the predicted BOLD reponse (red) from our model are quite similar indicating that the representations learned by our model are closer to brain-like representations.
+**Part C**: We observe that the true BOLD (blood oxygen level-dependent) response (black) and the predicted BOLD response (red) from our model are quite similar indicating that the representations learned by our model are closer to brain-like representations.
 
 **Key Takeaway**: We map the activations obtained from the trained wav2vec 2.0 model to the brain activity and measure the similarity using Pearson correlation R (higher is better). Representations learned by our model map to those obtained from brain.
 
@@ -53,7 +53,7 @@ Next, we try mapping the functional hierarchy (model layers) of our self-supervi
 
 **Part C**: We measure the proportion of voxels predicted by the different layers of the model primarily in the four regions involved in speech processing- A1 and A2, STG, STS, and IFG. We observe that voxels belonging to the lower-level brain areas are best predicted by lower layers of the model whereas the higher-level brain areas are best predicted by higher layers of the model.
 
-**Key Takeaway**: The hierarchy of representations from model layers aligns with the expected cortical hierarachy. Lower regions (A1, A2) are best predicted by lower layers and higher regions (IFG, STS) are best predicted by higher layers.
+**Key Takeaway**: The hierarchy of representations from model layers aligns with the expected cortical hierarchy. Lower regions (A1, A2) are best predicted by lower layers and higher regions (IFG, STS) are best predicted by higher layers.
 
 ###  Can we use such self-supervised models to identify regions in brain that correspond to acoustic, speech, and language?
 We compare the phonetic representations of our models to those of humans using ABX matching-to-sample task. For humans this meant for each sound triplet "ABX" identify whether stimulus X is more similar to A or B. For our models this just meant computing the euclidean distance between these using the most discriminative layer (transformer layer 5).
@@ -64,7 +64,7 @@ We compare the phonetic representations of our models to those of humans using A
 
 **Part A**: We use ABX matching-to-sample task to evaluate humans' ability to perceive phonemes of their native and non-native languages. As expected the accuracy for native is better than non-native.
 
-**Part B**: We evaluate four models- random, non-speech, English and French. The random model is the wav2vec 2.0 without any training whereas the other models are trained using self-supervision. These models are evaluated on the same evaluation set as that of human participants. English and French models are evaluated on the same (native) or different (non-native) whereas the random and non-speech are evaluated on both.
+**Part B**: We evaluate four models- random, non-speech, English, and French. The random model is the wav2vec 2.0 without any training whereas the other models are trained using self-supervision. These models are evaluated on the same evaluation set as that of human participants. English and French models are evaluated on the same (native) or different (non-native) whereas the random and non-speech are evaluated on both.
 
 **Part C**: Here we report the R scores of these different models (averaged across voxels) in four regions of the brain.
 
