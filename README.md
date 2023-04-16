@@ -34,7 +34,16 @@ This study proposes using self-supervised algorithms trained on raw waveform dat
 
 
 ### The functional hierarchy of self-supervised wav2vec 2.0 maps to the speech hierarchy of the brain
-<img src="figure3.png">
+<p>
+    <img src="figure3.png" alt><br>
+    <em>Figure 3: The functional hierarchy of self-supervised wav2vec 2.0 maps to the speech hierarchy of the brain</em>
+</p>
+
+**Part A**: We compute the R scores for each layer of the wav2vec 2.0 model separately and then estimate for each voxel the layer with the highest brain score (averaged across all subjects). We observe that the lower layers (blue) of the transformer model correspond to the low-level auditory cortices i.e A1 and A2 whereas the higher layers (orange and red) correspond to the higher level processes i.e STS and IFG.
+
+**Part B**: Layerwise R scores averaged across all voxels.
+
+**Part C**: We measure the proportion of voxels predicted by the different layers of the model primarily in the four regions involved in speech processing- A1 and A2, STG, STS, and IFG. We observe that voxels belonging to the lower-level brain areas are best predicted by lower layers of the model whereas the higher-level brain areas are best predicted by higher layers of the model.
 
 ###  The specialization of wav2vec 2.0’s representations follows and clarifies the acoustic,speech, and language regions in the brain
 <img src="figure4.png">
