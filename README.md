@@ -56,3 +56,5 @@ This study proposes using self-supervised algorithms trained on raw waveform dat
 **Part B**: We evaluate four models- random, non-speech, English and French. The random model is the wav2vec 2.0 without any training whereas the other models are trained using self-supervision. These models are evaluated on the same evaluation set as that of human participants. English and French models are evaluated on the same (native) or different (non-native) whereas the random and non-speech are evaluated on both.
 
 **Part C**: Here we report the R scores of these different models ( averaged across voxels) in four regions of the brain.
+
+**Part D**: Here we identify for each voxel in the brain which of the four models give a higher R score. This helps in identifying areas in brain that corresponds to acoustic, speech, and language.
