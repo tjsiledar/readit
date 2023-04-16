@@ -45,7 +45,7 @@ This study proposes using self-supervised algorithms trained on raw waveform dat
 
 **Part C**: We measure the proportion of voxels predicted by the different layers of the model primarily in the four regions involved in speech processing- A1 and A2, STG, STS, and IFG. We observe that voxels belonging to the lower-level brain areas are best predicted by lower layers of the model whereas the higher-level brain areas are best predicted by higher layers of the model.
 
-###  The specialization of wav2vec 2.0’s representations follows and clarifies the acoustic,speech, and language regions in the brain.
+###  Can we use such self-supervised models to identify regions in brain that correspond to acoustic, speech and language?
 <p>
     <img src="figure4.png" alt><br>
     <em>Figure 4: The specialization of wav2vec 2.0’s representations follows and clarifies the acoustic,speech, and language regions in the brain</em>
