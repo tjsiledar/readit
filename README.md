@@ -22,6 +22,8 @@ Furthermore, we showcase how self-supervised learning can explicate the organiza
 
 **Part C**: We observe that the true BOLD (blood oxygen level-dependent) response (black) and the predicted BOLD reponse (red) from our model are quite similar indicating that the representations learned by our model are closer to brain-like representations.
 
+**Key Takeaway**: 
+
 ### Can brain-like representations be generated using self supervised modeling?
 <p>
     <img src="figure2.png" alt><br>
@@ -34,6 +36,7 @@ Furthermore, we showcase how self-supervised learning can explicate the organiza
 
 **Part C**: We compare unsupervised, supervised, and self supervised trained models on 600 hrs of effective speech using R scores. We observe that self supervised model better corresponds to generating brain-like representations.
 
+**Key Takeaway**:
 
 ### Is there a mapping between the functional hierarchy of the self-supervised models and the speech hierarchy of the brain?
 <p>
@@ -46,6 +49,8 @@ Furthermore, we showcase how self-supervised learning can explicate the organiza
 **Part B**: Layerwise R scores averaged across all voxels.
 
 **Part C**: We measure the proportion of voxels predicted by the different layers of the model primarily in the four regions involved in speech processing- A1 and A2, STG, STS, and IFG. We observe that voxels belonging to the lower-level brain areas are best predicted by lower layers of the model whereas the higher-level brain areas are best predicted by higher layers of the model.
+
+**Key Takeaway**:
 
 ###  Can we use such self-supervised models to identify regions in brain that correspond to acoustic, speech and language?
 <p>
@@ -60,3 +65,5 @@ Furthermore, we showcase how self-supervised learning can explicate the organiza
 **Part C**: Here we report the R scores of these different models ( averaged across voxels) in four regions of the brain.
 
 **Part D**: Here we identify for each voxel in the brain which of the four models give a higher R score. This helps in identifying areas in brain that corresponds to acoustic, speech, and language.
+
+**Key Takeaway**:
