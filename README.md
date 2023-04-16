@@ -56,7 +56,7 @@ Next, we try mapping the functional hierarchy (model layers) of our self-supervi
 **Key Takeaway**: The hierarchy of representations from model layers aligns with the expected cortical hierarachy. Lower regions (A1, A2) are best predicted by lower layers and higher regions (IFG, STS) are best predicted by higher layers.
 
 ###  Can we use such self-supervised models to identify regions in brain that correspond to acoustic, speech and language?
-We compare the phonetic representations of our models to those of humans using ABX matching-to-sample task. For humans this meant for each sound triplet "ABX" identify whether stimlus X is more similar to A or B. For our models this just meant computing the euclidean distance between these using the most discriminative layer (transformer layer 5).
+We compare the phonetic representations of our models to those of humans using ABX matching-to-sample task. For humans this meant for each sound triplet "ABX" identify whether stimulus X is more similar to A or B. For our models this just meant computing the euclidean distance between these using the most discriminative layer (transformer layer 5).
 <p>
     <img src="figure4.png" alt><br>
     <em>Figure 4: The specialization of wav2vec 2.0’s representations follows and clarifies the acoustic,speech, and language regions in the brain</em>
