@@ -32,7 +32,7 @@ We compare three different models. An untrained wav2vec 2.0 model, a model train
     <em>Figure 2: Self-supervised learning for wav2vec 2.0 is enough to generate brain-like representations</em>
 </p>
 
-**Part A**: Brain score R is calculated for each participant and voxel independently. Here we show the average scores across subjects using color coding. 
+**Part A**: Brain score R is calculated for each participant and voxel (a small volume of brain tissue) independently. Here we show the average scores across subjects using color coding. 
 
 **Part B**: Shows the R scores for the same wav2vec 2.0 model, averaged across subjects and voxels in four brain areas typically involved in speech processing. The gray bar shows the brain score obtained with randomly initialized wav2vec 2.0 model, while the colored bars represent the scores obtained with the trained model. We observe that there is a significant difference between the random and the trained model indicating that the trained model is actually learning the brain-like representations.
 
@@ -41,7 +41,7 @@ We compare three different models. An untrained wav2vec 2.0 model, a model train
 **Key Takeaway**: Brain activity in nearly all cortical areas can be predicted with significant accuracy based on the activations of the models. Self-supervision performs better than supervised.
 
 ### Is there a mapping between the functional hierarchy of the self-supervised models and the speech hierarchy of the brain?
-Next, we try mapping the functional hierarchy (model layers) of our self-supervised model with that of the speech hierarchy (speech related regions of brain i.e A1, A2, STG, STS, and IFG).
+Next, we try mapping the functional hierarchy (model layers) of our self-supervised model with that of the speech hierarchy i.e speech related regions of brain such as A1, A2, STG, STS, and IFG.
 <p>
     <img src="figure3.png" alt><br>
     <em>Figure 3: The functional hierarchy of self-supervised wav2vec 2.0 maps to the speech hierarchy of the brain</em>
@@ -56,7 +56,7 @@ Next, we try mapping the functional hierarchy (model layers) of our self-supervi
 **Key Takeaway**: The hierarchy of representations from Transformer layers aligns with the expected cortical hierarachy. Lower regions (A1, A2) are best predicted by initial Transformer layers and higher regions (IFG, STS) are best predicted by higher layers.
 
 ###  Can we use such self-supervised models to identify regions in brain that correspond to acoustic, speech and language?
-We compare the phonetic representations of our models to those of humans using ABX matching-to-sample task. For humans this meant for each sound triplet "ABX" identify whether stimlus X is more similar to A or B. For our models this just meant euclidean distance between these using the most discriminative layer (transformer layer 5).
+We compare the phonetic representations of our models to those of humans using ABX matching-to-sample task. For humans this meant for each sound triplet "ABX" identify whether stimlus X is more similar to A or B. For our models this just meant computing the euclidean distance between these using the most discriminative layer (transformer layer 5).
 <p>
     <img src="figure4.png" alt><br>
     <em>Figure 4: The specialization of wav2vec 2.0’s representations follows and clarifies the acoustic,speech, and language regions in the brain</em>
@@ -76,6 +76,6 @@ We compare the phonetic representations of our models to those of humans using A
 Human infants can acquire language with little supervision in a few hundred hours of speech. Our study tests whether self-supervised learning on limited speech can explain the organization of speech processing in the human brain as measured by fMRI. Wav2vec 2.0 models trained on French, English, and Mandarin datasets are compared to fMRI recordings of French, English, and Mandarin speakers listening to audio stories. Our results show that this self-supervised model learns 
 1. representations that linearly map onto a remarkably distributed set of cortical regions (Figure 2)
 2. a computational hierarchy that aligns with the cortical hierarchy (Figure 3)
-3. features specific to the language of the participants (Figure 4).
+3. features specific to the language of the participants (Figure 4)
 
 The human brain is complex and difficult to understand, and some believe that there is no simple theory to describe it. However, this work shows that self-supervised learning can lead to brain-like processes, challenging the belief that a simple theory cannot exist.
