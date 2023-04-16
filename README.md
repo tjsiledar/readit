@@ -36,7 +36,7 @@ Furthermore, we showcase how self-supervised learning can explicate the organiza
 
 **Part C**: We compare unsupervised, supervised, and self supervised trained models on 600 hrs of effective speech using R scores. We observe that self supervised model better corresponds to generating brain-like representations.
 
-**Key Takeaway**:
+**Key Takeaway**: Brain activity in nearly all cortical areas can be predicted with significant accuracy based on the activations of the models. Self-supervision performs better than supervised.
 
 ### Is there a mapping between the functional hierarchy of the self-supervised models and the speech hierarchy of the brain?
 <p>
@@ -50,7 +50,7 @@ Furthermore, we showcase how self-supervised learning can explicate the organiza
 
 **Part C**: We measure the proportion of voxels predicted by the different layers of the model primarily in the four regions involved in speech processing- A1 and A2, STG, STS, and IFG. We observe that voxels belonging to the lower-level brain areas are best predicted by lower layers of the model whereas the higher-level brain areas are best predicted by higher layers of the model.
 
-**Key Takeaway**:
+**Key Takeaway**: The hierarchy of representations from Transformer layers aligns with the expected cortical hierarachy. Lower regions (A1, A2) are best predicted by initial Transformer layers and higher regions (IFG, STS) are best predicted by higher layers.
 
 ###  Can we use such self-supervised models to identify regions in brain that correspond to acoustic, speech and language?
 <p>
