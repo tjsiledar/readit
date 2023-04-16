@@ -56,7 +56,7 @@ Next, we try mapping the functional hierarchy (model layers) of our self-supervi
 **Key Takeaway**: The hierarchy of representations from Transformer layers aligns with the expected cortical hierarachy. Lower regions (A1, A2) are best predicted by initial Transformer layers and higher regions (IFG, STS) are best predicted by higher layers.
 
 ###  Can we use such self-supervised models to identify regions in brain that correspond to acoustic, speech and language?
-We compare the phonetic representations of our models to those of humans using ABX matching-to-sample task. For humans this meant for each sound triplet "ABX" identify whether stimlus X is more similar to A or B. For our models this just meant euclidean distance between these using the most discriminative layer.
+We compare the phonetic representations of our models to those of humans using ABX matching-to-sample task. For humans this meant for each sound triplet "ABX" identify whether stimlus X is more similar to A or B. For our models this just meant euclidean distance between these using the most discriminative layer (transformer layer 5).
 <p>
     <img src="figure4.png" alt><br>
     <em>Figure 4: The specialization of wav2vec 2.0’s representations follows and clarifies the acoustic,speech, and language regions in the brain</em>
@@ -71,3 +71,9 @@ We compare the phonetic representations of our models to those of humans using A
 **Part D**: Here we identify for each voxel in the brain which of the four models give a higher R score. This helps in identifying areas in brain that corresponds to acoustic, speech, and language.
 
 **Key Takeaway**: Humans are better at discriminating native sounds than non-native sounds as expected. Applying the same discriminating test, our models also show similar discrimination for native and non-native, even better than humans. Results confirm that 600h of self supervised learning suffices for wav2vec 2.0 to learn language representations. 
+
+### Conclusion
+Human infants can acquire language with little supervision in a few hundred hours of speech. Our study tests whether self-supervised learning on limited speech can explain the organization of speech processing in the human brain as measured by fMRI. Wav2vec 2.0 models trained on French, English, and Mandarin datasets are compared to fMRI recordings of French, English, and Mandarin speakers listening to audio stories. Our results show that this self-supervised model learns 
+1. representations that linearly map onto a re- markably distributed set of cortical regions (Figure 2)
+2. a computational hierarchy that aligns with the cortical hierarchy (Figure 3)
+3. features specific to the language of the participants (Figure 4).
