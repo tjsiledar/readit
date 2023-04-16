@@ -30,7 +30,7 @@ This study proposes using self-supervised algorithms trained on raw waveform dat
 
 **Part B**: Shows the R scores for the same wav2vec 2.0 model, averaged across subjects and voxels in four brain areas typically involved in speech processing. The gray bar shows the brain score obtained with randomly initialized wav2vec 2.0 model, while the colored bars represent the scores obtained with the trained model. We observe that there is a significant difference between the random and the trained model indicating that the trained model is actually learning the brain-like representations.
 
-**Part C**: 
+**Part C**: We compare unsupervised, supervised, and self supervised trained models on 600 hrs of effective speech using R scores. We observe that self supervised model better corresponds to generating brain-like representations.
 
 
 ### The functional hierarchy of self-supervised wav2vec 2.0 maps to the speech hierarchy of the brain
