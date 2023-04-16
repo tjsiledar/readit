@@ -80,4 +80,4 @@ Human infants can acquire language with little supervision in a few hundred hour
 
 The human brain is complex and difficult to understand, and some believe that there is no simple theory to describe it. However, this work shows that self-supervised learning can lead to brain-like processes, challenging the belief that a simple theory cannot exist.
 
-[Link to the original paper.](https://openreview.net/pdf?id=Y6A4-R_Hgsw)
+[Link to the original paper](https://openreview.net/pdf?id=Y6A4-R_Hgsw)
