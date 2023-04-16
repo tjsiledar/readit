@@ -77,4 +77,5 @@ Human infants can acquire language with little supervision in a few hundred hour
 1. representations that linearly map onto a remarkably distributed set of cortical regions (Figure 2)
 2. a computational hierarchy that aligns with the cortical hierarchy (Figure 3)
 3. features specific to the language of the participants (Figure 4).
+
 The human brain is complex and difficult to understand, and some believe that there is no simple theory to describe it. However, this work shows that self-supervised learning can lead to brain-like processes, challenging the belief that a simple theory cannot exist.
