@@ -53,7 +53,7 @@ Next, we try mapping the functional hierarchy (model layers) of our self-supervi
 
 **Part C**: We measure the proportion of voxels predicted by the different layers of the model primarily in the four regions involved in speech processing- A1 and A2, STG, STS, and IFG. We observe that voxels belonging to the lower-level brain areas are best predicted by lower layers of the model whereas the higher-level brain areas are best predicted by higher layers of the model.
 
-**Key Takeaway**: The hierarchy of representations from Transformer layers aligns with the expected cortical hierarachy. Lower regions (A1, A2) are best predicted by lower Transformer layers and higher regions (IFG, STS) are best predicted by higher layers.
+**Key Takeaway**: The hierarchy of representations from model layers aligns with the expected cortical hierarachy. Lower regions (A1, A2) are best predicted by lower layers and higher regions (IFG, STS) are best predicted by higher layers.
 
 ###  Can we use such self-supervised models to identify regions in brain that correspond to acoustic, speech and language?
 We compare the phonetic representations of our models to those of humans using ABX matching-to-sample task. For humans this meant for each sound triplet "ABX" identify whether stimlus X is more similar to A or B. For our models this just meant computing the euclidean distance between these using the most discriminative layer (transformer layer 5).
