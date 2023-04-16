@@ -41,6 +41,7 @@ We compare three different models. An untrained wav2vec 2.0 model, a model train
 **Key Takeaway**: Brain activity in nearly all cortical areas can be predicted with significant accuracy based on the activations of the models. Self-supervision performs better than supervised.
 
 ### Is there a mapping between the functional hierarchy of the self-supervised models and the speech hierarchy of the brain?
+Next, we try mapping the functional hierarchy (model layers) of our self-supervised model with that of the speech hierarchy (speech related regions of brain i.e A1, A2, STG, STS, and IFG).
 <p>
     <img src="figure3.png" alt><br>
     <em>Figure 3: The functional hierarchy of self-supervised wav2vec 2.0 maps to the speech hierarchy of the brain</em>
@@ -55,6 +56,7 @@ We compare three different models. An untrained wav2vec 2.0 model, a model train
 **Key Takeaway**: The hierarchy of representations from Transformer layers aligns with the expected cortical hierarachy. Lower regions (A1, A2) are best predicted by initial Transformer layers and higher regions (IFG, STS) are best predicted by higher layers.
 
 ###  Can we use such self-supervised models to identify regions in brain that correspond to acoustic, speech and language?
+We compare the phonetic representations of our models to those of humans using ABX matching-to-sample task. For humans this meant for each sound triplet "ABX" identify whether stimlus X is more similar to A or B. For our models this just meant euclidean distance between these using the most discriminative layer.
 <p>
     <img src="figure4.png" alt><br>
     <em>Figure 4: The specialization of wav2vec 2.0’s representations follows and clarifies the acoustic,speech, and language regions in the brain</em>
