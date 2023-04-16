@@ -8,7 +8,7 @@ Recent research has found that deep neural networks can produce similar results 
 
 This study proposes using self-supervised algorithms trained on raw waveform data as a solution for speech processing. The results show that this method can learn brain-like representations with only 600 hours of unlabelled speech, which is comparable to what infants are exposed to during language acquisition. The functional hierarchy of the algorithm aligns with the cortical hierarchy of speech processing, and different training regimes reveal functional specialization similar to the cortex. The study confirms that this specialization is similar to the behavior of additional participants. This research shows how self-supervised learning can explain the organization of speech processing in the brain, and can identify the laws of language acquisition that shape the human brain.
 
-### Comparison of speech representations in brains and deep neural networks
+### Comparison of speech representations in brains and deep neural networks.
 <p>
     <img src="figure1.png" alt><br>
     <em>Figure 1: Comparing speech representations in brain and deep neural networks</em>
@@ -20,7 +20,7 @@ This study proposes using self-supervised algorithms trained on raw waveform dat
 
 **Part C**: We observe that the true BOLD (blood oxygen level-dependent) response (black) and the predicted BOLD reponse (red) from our model are quite similar indicating that the representations learned by our model are closer to brain-like representations.
 
-### Self supervised wav2vec 2.0 generates brain-like speech representations
+### Can brain-like representations be generated using self supervised modeling?
 <p>
     <img src="figure2.png" alt><br>
     <em>Figure 2: Self-supervised learning for wav2vec 2.0 is enough to generate brain-like representations</em>
@@ -33,7 +33,7 @@ This study proposes using self-supervised algorithms trained on raw waveform dat
 **Part C**: We compare unsupervised, supervised, and self supervised trained models on 600 hrs of effective speech using R scores. We observe that self supervised model better corresponds to generating brain-like representations.
 
 
-### The functional hierarchy of self-supervised wav2vec 2.0 maps to the speech hierarchy of the brain
+### Is there a mapping between the functional hierarchy of the self-supervised models and the speech hierarchy of the brain?
 <p>
     <img src="figure3.png" alt><br>
     <em>Figure 3: The functional hierarchy of self-supervised wav2vec 2.0 maps to the speech hierarchy of the brain</em>
