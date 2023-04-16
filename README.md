@@ -1,12 +1,14 @@
 # Toward a realistic model of speech processing in the brain with self-supervised learning
 <p align="justify">
-Recent research has found that deep neural networks can produce similar results to the brain in response to the same input. However, these algorithms have certain limitations, such as 
-1. requiring a large amount of data 
-2. supervised labels
-3. textual input rather than raw sensory input
-4. large memory
+Recent research has found that deep neural networks can produce similar results to the brain in response to the same input. However, these algorithms have certain limitations, such as <br>
+<ol>
+    <li>requiring a large amount of data</li>
+    <li>supervised labels</li>
+    <li>textual input rather than raw sensory input</li>
+    <li>large memory</li>
+</ol>
 
-To address these challenges in speech processing, we propose utilizing self-supervised algorithms that are trained on raw waveform data. Our research demonstrates that this approach can create brain-like representations with just 600 hours of unlabeled speech, a similar exposure rate to that of infants during language acquisition. The functional hierarchy of this algorithm aligns with the cortical hierarchy of speech processing, and various training methods reveal functional specialization that is comparable to the cortex. Our research confirms that this specialization is analogous to the behavior of additional participants.
+To address these challenges in speech processing, we propose utilizing self-supervised algorithms that are trained on raw waveform data. Our research demonstrates that this approach can create brain-like representations with just 600 hours of unlabeled speech, a similar exposure rate to that of infants during language acquisition. The functional hierarchy of this algorithm aligns with the cortical hierarchy of speech processing, and various training methods reveal functional specialization that is comparable to the cortex. Our research confirms that this specialization is analogous to the behavior of additional participants. <br>
 
 Furthermore, we showcase how self-supervised learning can explicate the organization of speech processing in the brain and identify the language acquisition laws that shape the human brain.
 </p>
