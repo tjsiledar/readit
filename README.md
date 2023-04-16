@@ -74,6 +74,7 @@ We compare the phonetic representations of our models to those of humans using A
 
 ### Conclusion
 Human infants can acquire language with little supervision in a few hundred hours of speech. Our study tests whether self-supervised learning on limited speech can explain the organization of speech processing in the human brain as measured by fMRI. Wav2vec 2.0 models trained on French, English, and Mandarin datasets are compared to fMRI recordings of French, English, and Mandarin speakers listening to audio stories. Our results show that this self-supervised model learns 
-1. representations that linearly map onto a re- markably distributed set of cortical regions (Figure 2)
+1. representations that linearly map onto a remarkably distributed set of cortical regions (Figure 2)
 2. a computational hierarchy that aligns with the cortical hierarchy (Figure 3)
 3. features specific to the language of the participants (Figure 4).
+The human brain is complex and difficult to understand, and some believe that there is no simple theory to describe it. However, this work shows that self-supervised learning can lead to brain-like processes, challenging the belief that a simple theory cannot exist.
