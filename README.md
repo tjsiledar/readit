@@ -1,5 +1,5 @@
 # Toward a realistic model of speech processing in the brain with self-supervised learning
-
+<p align="justify">
 Recent research has found that deep neural networks can produce similar results to the brain in response to the same input. However, these algorithms have certain limitations, such as 
 1. requiring a large amount of data 
 2. supervised labels
@@ -9,6 +9,7 @@ Recent research has found that deep neural networks can produce similar results 
 To address these challenges in speech processing, we propose utilizing self-supervised algorithms that are trained on raw waveform data. Our research demonstrates that this approach can create brain-like representations with just 600 hours of unlabeled speech, a similar exposure rate to that of infants during language acquisition. The functional hierarchy of this algorithm aligns with the cortical hierarchy of speech processing, and various training methods reveal functional specialization that is comparable to the cortex. Our research confirms that this specialization is analogous to the behavior of additional participants.
 
 Furthermore, we showcase how self-supervised learning can explicate the organization of speech processing in the brain and identify the language acquisition laws that shape the human brain.
+</p>
 
 ### Comparison of speech representations in brains and deep neural networks.
 We test our hypothesis that the latest self-supervised architecture (wav2vec 2.0 in our case) trained on raw sensory data can produce activations similar to brain activity.
@@ -55,11 +56,11 @@ Next, we try mapping the functional hierarchy (model layers) of our self-supervi
 
 **Key Takeaway**: The hierarchy of representations from model layers aligns with the expected cortical hierarachy. Lower regions (A1, A2) are best predicted by lower layers and higher regions (IFG, STS) are best predicted by higher layers.
 
-###  Can we use such self-supervised models to identify regions in brain that correspond to acoustic, speech and language?
+###  Can we use such self-supervised models to identify regions in brain that correspond to acoustic, speech, and language?
 We compare the phonetic representations of our models to those of humans using ABX matching-to-sample task. For humans this meant for each sound triplet "ABX" identify whether stimulus X is more similar to A or B. For our models this just meant computing the euclidean distance between these using the most discriminative layer (transformer layer 5).
 <p>
     <img src="figure4.png" alt><br>
-    <em>Figure 4: The specialization of wav2vec 2.0’s representations follows and clarifies the acoustic,speech, and language regions in the brain</em>
+    <em>Figure 4: The specialization of wav2vec 2.0’s representations follows and clarifies the acoustic, speech, and language regions in the brain</em>
 </p>
 
 **Part A**: We use ABX matching-to-sample task to evaluate humans' ability to perceive phonemes of their native and non-native languages. As expected the accuracy for native is better than non-native.
